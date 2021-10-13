@@ -41,8 +41,8 @@ const Tasks = () => {
     setCompletedTasks(completedTasks.filter((t) => t.id !== task.id));
   };
 
-  console.log("tasks", tasks);
-  console.log("completedTasks", completedTasks);
+ // console.log("tasks", tasks);
+ // console.log("completedTasks", completedTasks);
 
   return (
     <div>

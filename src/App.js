@@ -3,7 +3,8 @@ import Gallery from "./Gallery";
 import Joke from "./Joke";
 import Matrix from "./Matrix";
 import Stories from "./Stories";
-import Task from "./Tasks";
+import Tasks from "./Tasks";
+import BetterTasks from "./BetterTasks";
 
 const App = () => {
   const [userQuery, setUserQuery] = useState("");
@@ -11,7 +12,7 @@ const App = () => {
 
   const updateUserQuery = (event) => {
     setUserQuery(event.target.value);
-    console.log("userQuery", userQuery);
+    //console.log("userQuery", userQuery);
   };
 
   const searchQuery = () => {
@@ -50,7 +51,9 @@ const App = () => {
       <hr />
       <Joke />
       <hr />
-      <Task />
+      <Tasks />
+      <hr />
+      <BetterTasks />
       <hr />
       <Stories />
     </div>
